@@ -58,6 +58,10 @@
         <action
             android:id="@+id/action_PeopleListFragment_to_PeopleDetailFragment"
             app:destination="@id/PeopleDetailFragment" />
+
+        <action
+            android:id="@+id/action_refresh_PeopleListFragment"
+            app:destination="@id/PeopleListFragment" />
     </fragment>
     <fragment
         android:id="@+id/PeopleDetailFragment"

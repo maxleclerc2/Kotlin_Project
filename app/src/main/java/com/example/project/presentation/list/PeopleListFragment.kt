@@ -25,8 +25,13 @@ class PeopleListFragment : Fragment() {
     private lateinit var recyclerView: RecyclerView
     private lateinit var loader: ProgressBar
     private lateinit var textViewError: TextView
+    private lateinit var buttonPrevious: Button
+    private lateinit var buttonNext: Button
     private val adapter = ElementAdapter(listOf(), ::onClickedPeople)
     private val viewModel: PeopleListViewModel by viewModels()
+
+    private lateinit var pagePrev: String
+    private lateinit var pageNext: String
 
     override fun onCreateView(
             inflater: LayoutInflater, container: ViewGroup?,
@@ -39,6 +44,9 @@ class PeopleListFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        buttonPrevious = view.findViewById(R.id.button_previous)
+        buttonNext = view.findViewById(R.id.button_next)
+
         recyclerView = view.findViewById(R.id.people_recyclerview)
         loader = view.findViewById(R.id.people_list_loader)
         textViewError = view.findViewById(R.id.people_list_error)
@@ -49,17 +57,48 @@ class PeopleListFragment : Fragment() {
             adapter = this@PeopleListFragment.adapter
         }
 
+        val page = arguments?.getString("page") ?: "1"
+
+        viewModel.callApi(page)
         viewModel.peopleList.observe(viewLifecycleOwner, Observer { elementListModel ->
             loader.isVisible = elementListModel is ElementListLoader
             textViewError.isVisible = elementListModel is ElementListError
 
             if(elementListModel is ElementListSuccess) {
                 showList(elementListModel.elementList)
+
+                if(elementListModel.previous != null) {
+                    buttonPrevious.isVisible = true
+                    pagePrev = elementListModel.previous.substring(39, 40)
+                } else {
+                    buttonPrevious.isVisible = false
+                    pagePrev = "1"
+                }
+
+                if(elementListModel.next != null) {
+                    buttonNext.isVisible = true
+                    pageNext = elementListModel.next.substring(39, 40)
+                } else {
+                    buttonNext.isVisible = false
+                    pageNext = "1"
+                }
             }
         })
 
         view.findViewById<Button>(R.id.button_menu).setOnClickListener {
             findNavController().navigate(R.id.action_PeopleListFragment_to_MenuFragment)
+        }
+
+        view.findViewById<Button>(R.id.button_next).setOnClickListener {
+            findNavController().navigate(R.id.action_refresh_PeopleListFragment, bundleOf(
+                    "page" to pageNext
+            ))
+        }
+
+        view.findViewById<Button>(R.id.button_previous).setOnClickListener {
+            findNavController().navigate(R.id.action_refresh_PeopleListFragment, bundleOf(
+                    "page" to pagePrev
+            ))
         }
     }
 
