@@ -1,7 +1,5 @@
 package com.example.project.presentation.detail
 
-import com.example.project.presentation.list.FilmListModel
-
 sealed class FilmDetailModel
 
 data class FilmDetailSuccess(

@@ -27,4 +27,12 @@
     <string name="producer_generic">Producer:</string>
     <string name="episodeId_generic">Episode:</string>
     <string name="release_generic">Release date:</string>
+    <string name="name_generic">Name:</string>
+    <string name="height_generic">Height:</string>
+    <string name="mass_generic">Mass:</string>
+    <string name="hairColor_generic">Hair color:</string>
+    <string name="skinColor_generic">Skin color:</string>
+    <string name="eyeColor_generic">Eye color:</string>
+    <string name="birthYear_generic">Birth year:</string>
+    <string name="gender_generic">Gender:</string>
 </resources>

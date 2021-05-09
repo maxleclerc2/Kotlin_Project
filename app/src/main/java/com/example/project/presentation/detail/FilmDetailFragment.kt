@@ -116,23 +116,5 @@ class FilmDetailFragment : Fragment() {
         view.findViewById<Button>(R.id.button_return).setOnClickListener {
             findNavController().navigate(R.id.action_FilmDetailFragment_to_FilmListFragment)
         }
-        //callApi(uid)
-    }
-
-    private fun callApi(uid : String) {
-        Singletons.starWarsApi.getFilmDetail(uid).enqueue(object : Callback<FilmDetailResponse> {
-            override fun onFailure(call: Call<FilmDetailResponse>, t: Throwable) {
-                //TODO("Not yet implemented")
-                println("test")
-            }
-
-            override fun onResponse(call: Call<FilmDetailResponse>, response: Response<FilmDetailResponse>) {
-                if(response.isSuccessful && response.body() != null) {
-                    println("test 2")
-                    textViewTitleValue.text = response.body()!!.result.properties.title
-                }
-            }
-
-        })
     }
 }
