@@ -25,6 +25,10 @@ class FilmDetailFragment : Fragment() {
     private lateinit var textViewTitleValue: TextView
     private lateinit var textViewProducer: TextView
     private lateinit var textViewProducerValue: TextView
+    private lateinit var textViewEpisodeId: TextView
+    private lateinit var textViewEpisodeIdValue: TextView
+    private lateinit var textViewRelease: TextView
+    private lateinit var textViewReleaseValue: TextView
     private lateinit var loader: ProgressBar
     private lateinit var textViewError: TextView
     private val viewModel: FilmDetailViewModel by viewModels()
@@ -44,6 +48,10 @@ class FilmDetailFragment : Fragment() {
         textViewTitleValue = view.findViewById(R.id.film_detail_title_value)
         textViewProducer = view.findViewById(R.id.film_detail_producer)
         textViewProducerValue = view.findViewById(R.id.film_detail_producer_value)
+        textViewEpisodeId = view.findViewById(R.id.film_detail_episodeId)
+        textViewEpisodeIdValue = view.findViewById(R.id.film_detail_episodeId_value)
+        textViewRelease = view.findViewById(R.id.film_detail_release)
+        textViewReleaseValue = view.findViewById(R.id.film_detail_release_value)
 
         loader = view.findViewById(R.id.film_detail_loader)
         textViewError = view.findViewById(R.id.film_detail_error)
@@ -61,9 +69,15 @@ class FilmDetailFragment : Fragment() {
                     textViewTitleValue.isVisible = true
                     textViewProducer.isVisible = true
                     textViewProducerValue.isVisible = true
+                    textViewEpisodeId.isVisible = true
+                    textViewEpisodeIdValue.isVisible = true
+                    textViewRelease.isVisible = true
+                    textViewReleaseValue.isVisible = true
 
                     textViewTitleValue.text = filmDetailModel.film.properties.title
                     textViewProducerValue.text = filmDetailModel.film.properties.producer
+                    textViewEpisodeIdValue.text = filmDetailModel.film.properties.episode_id.toString()
+                    textViewReleaseValue.text = filmDetailModel.film.properties.release_date
 
                     loader.isVisible = false
                     textViewError.isVisible = false
@@ -74,6 +88,10 @@ class FilmDetailFragment : Fragment() {
                     textViewTitleValue.isVisible = false
                     textViewProducer.isVisible = false
                     textViewProducerValue.isVisible = false
+                    textViewEpisodeId.isVisible = false
+                    textViewEpisodeIdValue.isVisible = false
+                    textViewRelease.isVisible = false
+                    textViewReleaseValue.isVisible = false
 
                     loader.isVisible = false
                     textViewError.isVisible = true
@@ -84,6 +102,10 @@ class FilmDetailFragment : Fragment() {
                     textViewTitleValue.isVisible = false
                     textViewProducer.isVisible = false
                     textViewProducerValue.isVisible = false
+                    textViewEpisodeId.isVisible = false
+                    textViewEpisodeIdValue.isVisible = false
+                    textViewRelease.isVisible = false
+                    textViewReleaseValue.isVisible = false
 
                     loader.isVisible = true
                     textViewError.isVisible = false

@@ -25,4 +25,6 @@
     <string name="return_generic">Return</string>
     <string name="title_generic">Title:</string>
     <string name="producer_generic">Producer:</string>
+    <string name="episodeId_generic">Episode:</string>
+    <string name="release_generic">Release date:</string>
 </resources>

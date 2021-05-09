@@ -29,7 +29,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_return"
         app:layout_constraintEnd_toStartOf="@+id/film_detail_title_value"
-        app:layout_constraintBottom_toTopOf="@+id/film_detail_producer"
+        app:layout_constraintBottom_toTopOf="@+id/film_detail_episodeId"
         />
 
     <TextView
@@ -40,6 +40,56 @@
         android:textAlignment="center"
         app:layout_constraintStart_toEndOf="@+id/film_detail_title"
         app:layout_constraintTop_toBottomOf="@+id/button_return"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/film_detail_episodeId"
+        />
+
+    <TextView
+        android:id="@+id/film_detail_episodeId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/episodeId_generic"
+        android:textColor="@color/yellow_star_wars"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/film_detail_title"
+        app:layout_constraintEnd_toStartOf="@+id/film_detail_episodeId_value"
+        app:layout_constraintBottom_toTopOf="@+id/film_detail_release"
+        />
+
+    <TextView
+        android:id="@+id/film_detail_episodeId_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/yellow_star_wars"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/film_detail_episodeId"
+        app:layout_constraintTop_toBottomOf="@+id/film_detail_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/film_detail_release"
+        />
+
+    <TextView
+        android:id="@+id/film_detail_release"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/release_generic"
+        android:textColor="@color/yellow_star_wars"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/film_detail_episodeId"
+        app:layout_constraintEnd_toStartOf="@+id/film_detail_release_value"
+        app:layout_constraintBottom_toTopOf="@+id/film_detail_producer"
+        />
+
+    <TextView
+        android:id="@+id/film_detail_release_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/yellow_star_wars"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/film_detail_release"
+        app:layout_constraintTop_toBottomOf="@+id/film_detail_episodeId"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/film_detail_producer"
         />
@@ -52,7 +102,7 @@
         android:textColor="@color/yellow_star_wars"
         android:textAlignment="center"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/film_detail_title"
+        app:layout_constraintTop_toBottomOf="@+id/film_detail_release"
         app:layout_constraintEnd_toStartOf="@+id/film_detail_producer_value"
         app:layout_constraintBottom_toBottomOf="parent"
         />
@@ -64,7 +114,7 @@
         android:textColor="@color/yellow_star_wars"
         android:textAlignment="center"
         app:layout_constraintStart_toEndOf="@+id/film_detail_producer"
-        app:layout_constraintTop_toBottomOf="@+id/film_detail_title"
+        app:layout_constraintTop_toBottomOf="@+id/film_detail_release"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         />
