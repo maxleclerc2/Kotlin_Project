@@ -27,5 +27,9 @@ class MenuFragment : Fragment() {
         view.findViewById<Button>(R.id.button_film).setOnClickListener {
             findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
         }
+
+        view.findViewById<Button>(R.id.button_people).setOnClickListener {
+            findNavController().navigate(R.id.action_MenuFragment_to_PeopleListFragment)
+        }
     }
 }

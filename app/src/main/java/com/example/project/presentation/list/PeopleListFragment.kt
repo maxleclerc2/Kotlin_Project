@@ -16,61 +16,60 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.project.R
-import com.example.project.presentation.detail.Film
 
 /**
  * A simple [Fragment] subclass as the second destination in the navigation.
  */
-class FilmListFragment : Fragment() {
+class PeopleListFragment : Fragment() {
 
     private lateinit var recyclerView: RecyclerView
     private lateinit var loader: ProgressBar
     private lateinit var textViewError: TextView
-    private val adapter = FilmAdapter(listOf(), ::onClickedFilm)
-    private val viewModel: FilmListViewModel by viewModels()
+    private val adapter = ElementAdapter(listOf(), ::onClickedPeople)
+    private val viewModel: PeopleListViewModel by viewModels()
 
     override fun onCreateView(
             inflater: LayoutInflater, container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_film_list, container, false)
+        return inflater.inflate(R.layout.fragment_people_list, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        recyclerView = view.findViewById(R.id.film_recyclerview)
-        loader = view.findViewById(R.id.film_list_loader)
-        textViewError = view.findViewById(R.id.film_list_error)
+        recyclerView = view.findViewById(R.id.people_recyclerview)
+        loader = view.findViewById(R.id.people_list_loader)
+        textViewError = view.findViewById(R.id.people_list_error)
 
         adapter.listener
         recyclerView.apply {
             layoutManager = LinearLayoutManager(context)
-            adapter = this@FilmListFragment.adapter
+            adapter = this@PeopleListFragment.adapter
         }
 
-        viewModel.filmList.observe(viewLifecycleOwner, Observer { filmListModel ->
-            loader.isVisible = filmListModel is FilmListLoader
-            textViewError.isVisible = filmListModel is FilmListError
+        viewModel.peopleList.observe(viewLifecycleOwner, Observer { elementListModel ->
+            loader.isVisible = elementListModel is ElementListLoader
+            textViewError.isVisible = elementListModel is ElementListError
 
-            if(filmListModel is FilmListSuccess) {
-                showList(filmListModel.filmList)
+            if(elementListModel is ElementListSuccess) {
+                showList(elementListModel.elementList)
             }
         })
 
         view.findViewById<Button>(R.id.button_menu).setOnClickListener {
-            findNavController().navigate(R.id.action_FilmListFragment_to_MenuFragment)
+            findNavController().navigate(R.id.action_PeopleListFragment_to_MenuFragment)
         }
     }
 
-    private fun showList(filmList: List<Film>) {
-        adapter.updateList(filmList)
+    private fun showList(elementList: List<Element>) {
+        adapter.updateList(elementList)
     }
 
-    private fun onClickedFilm(uid: String) {
-        findNavController().navigate(R.id.action_FilmListFragment_to_FilmDetailFragment, bundleOf(
-            "uid" to uid
+    private fun onClickedPeople(uid: String) {
+        findNavController().navigate(R.id.action_PeopleListFragment_to_PeopleDetailFragment, bundleOf(
+                "uid" to uid
         ))
     }
 }

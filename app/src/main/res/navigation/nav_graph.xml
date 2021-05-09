@@ -14,7 +14,12 @@
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
             app:destination="@id/FilmListFragment" />
+
+        <action
+            android:id="@+id/action_MenuFragment_to_PeopleListFragment"
+            app:destination="@id/PeopleListFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/FilmListFragment"
         android:name="com.example.project.presentation.list.FilmListFragment"
@@ -38,5 +43,30 @@
         <action
             android:id="@+id/action_FilmDetailFragment_to_FilmListFragment"
             app:destination="@id/FilmListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/PeopleListFragment"
+        android:name="com.example.project.presentation.list.PeopleListFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_people_list">
+
+        <action
+            android:id="@+id/action_PeopleListFragment_to_MenuFragment"
+            app:destination="@id/MenuFragment" />
+
+        <action
+            android:id="@+id/action_PeopleListFragment_to_PeopleDetailFragment"
+            app:destination="@id/PeopleDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/PeopleDetailFragment"
+        android:name="com.example.project.presentation.detail.PeopleDetailFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_people_detail">
+
+        <action
+            android:id="@+id/action_PeopleDetailFragment_to_PeopleListFragment"
+            app:destination="@id/PeopleListFragment" />
     </fragment>
 </navigation>
