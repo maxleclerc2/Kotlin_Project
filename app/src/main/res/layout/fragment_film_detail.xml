@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.detail.FilmDetailFragment">
+
+    <Button
+        android:id="@+id/button_return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/return_generic"
+        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/film_detail_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_generic"
+        android:textColor="@color/yellow_star_wars"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_return"
+        app:layout_constraintEnd_toStartOf="@+id/film_detail_title_value"
+        app:layout_constraintBottom_toTopOf="@+id/film_detail_producer"
+        />
+
+    <TextView
+        android:id="@+id/film_detail_title_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/yellow_star_wars"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/film_detail_title"
+        app:layout_constraintTop_toBottomOf="@+id/button_return"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/film_detail_producer"
+        />
+
+    <TextView
+        android:id="@+id/film_detail_producer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/producer_generic"
+        android:textColor="@color/yellow_star_wars"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/film_detail_title"
+        app:layout_constraintEnd_toStartOf="@+id/film_detail_producer_value"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/film_detail_producer_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/yellow_star_wars"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/film_detail_producer"
+        app:layout_constraintTop_toBottomOf="@+id/film_detail_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <ProgressBar
+        android:id="@+id/film_detail_loader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_return" />
+
+    <TextView
+        android:id="@+id/film_detail_error"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/error_generic"
+        android:textAlignment="center"
+        android:textColor="@color/yellow_star_wars"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_return"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,4 +9,20 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="menu_star_wars">Star Wars\nAPI Project</string>
+    <string name="menu_film">Films</string>
+    <string name="menu_people">People</string>
+    <string name="menu_planet">Planets</string>
+    <string name="menu_starship">Starships</string>
+    <string name="menu_species">Species</string>
+    <string name="menu_vehicle">Vehicles</string>
+
+    <string name="return_menu">Menu</string>
+    <string name="previous_page">Previous page</string>
+    <string name="next_page">Next page</string>
+    <string name="error_generic">An error occurred...</string>
+    <string name="return_generic">Return</string>
+    <string name="title_generic">Title:</string>
+    <string name="producer_generic">Producer:</string>
 </resources>
