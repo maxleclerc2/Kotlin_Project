@@ -13,11 +13,6 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
 import com.example.project.R
-import com.example.project.presentation.Singletons
-import com.example.project.presentation.api.FilmDetailResponse
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
 
 class PeopleDetailFragment : Fragment() {
 

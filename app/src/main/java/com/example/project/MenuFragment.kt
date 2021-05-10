@@ -31,5 +31,25 @@ class MenuFragment : Fragment() {
         view.findViewById<Button>(R.id.button_people).setOnClickListener {
             findNavController().navigate(R.id.action_MenuFragment_to_PeopleListFragment)
         }
+
+        view.findViewById<Button>(R.id.button_planet).setOnClickListener {
+            findNavController().navigate(R.id.action_MenuFragment_to_PlanetListFragment)
+        }
+
+        /*
+
+        view.findViewById<Button>(R.id.button_species).setOnClickListener {
+            findNavController().navigate(R.id.action_MenuFragment_to_PeopleListFragment)
+        }
+
+        view.findViewById<Button>(R.id.button_starship).setOnClickListener {
+            findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
+        }
+
+        view.findViewById<Button>(R.id.button_vehicle).setOnClickListener {
+            findNavController().navigate(R.id.action_MenuFragment_to_PeopleListFragment)
+        }
+
+         */
     }
 }

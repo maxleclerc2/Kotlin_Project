@@ -18,6 +18,22 @@
         <action
             android:id="@+id/action_MenuFragment_to_PeopleListFragment"
             app:destination="@id/PeopleListFragment" />
+
+        <action
+            android:id="@+id/action_MenuFragment_to_PlanetListFragment"
+            app:destination="@id/PlanetListFragment" />
+
+        <action
+            android:id="@+id/action_MenuFragment_to_SpeciesListFragment"
+            app:destination="@id/PeopleListFragment" />
+
+        <action
+            android:id="@+id/action_MenuFragment_to_StarshipListFragment"
+            app:destination="@id/FilmListFragment" />
+
+        <action
+            android:id="@+id/action_MenuFragment_to_VehicleListFragment"
+            app:destination="@id/PeopleListFragment" />
     </fragment>
 
     <fragment
@@ -72,5 +88,34 @@
         <action
             android:id="@+id/action_PeopleDetailFragment_to_PeopleListFragment"
             app:destination="@id/PeopleListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/PlanetListFragment"
+        android:name="com.example.project.presentation.list.PlanetListFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_planet_list">
+
+        <action
+            android:id="@+id/action_PlanetListFragment_to_MenuFragment"
+            app:destination="@id/MenuFragment" />
+
+        <action
+            android:id="@+id/action_PlanetListFragment_to_PlanetDetailFragment"
+            app:destination="@id/PlanetDetailFragment" />
+
+        <action
+            android:id="@+id/action_refresh_PlanetListFragment"
+            app:destination="@id/PlanetListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/PlanetDetailFragment"
+        android:name="com.example.project.presentation.detail.PlanetDetailFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_planet_detail">
+
+        <action
+            android:id="@+id/action_PlanetDetailFragment_to_PlanetListFragment"
+            app:destination="@id/PlanetListFragment" />
     </fragment>
 </navigation>

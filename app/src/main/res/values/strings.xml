@@ -23,10 +23,12 @@
     <string name="next_page">Next page</string>
     <string name="error_generic">An error occurred...</string>
     <string name="return_generic">Return</string>
+
     <string name="title_generic">Title:</string>
     <string name="producer_generic">Producer:</string>
     <string name="episodeId_generic">Episode:</string>
     <string name="release_generic">Release date:</string>
+
     <string name="name_generic">Name:</string>
     <string name="height_generic">Height:</string>
     <string name="mass_generic">Mass:</string>
@@ -35,4 +37,12 @@
     <string name="eyeColor_generic">Eye color:</string>
     <string name="birthYear_generic">Birth year:</string>
     <string name="gender_generic">Gender:</string>
+
+    <string name="diameter_generic">Diameter:</string>
+    <string name="rotationPeriod_generic">Rotation period:</string>
+    <string name="orbitalPeriod_generic">Orbital period:</string>
+    <string name="gravity_generic">Gravity:</string>
+    <string name="population_generic">Population:</string>
+    <string name="climate_generic">Climate:</string>
+    <string name="terrain_generic">Terrain:</string>
 </resources>

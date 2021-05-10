@@ -3,7 +3,6 @@ package com.example.project.presentation.detail
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.project.presentation.Singletons
-import com.example.project.presentation.api.FilmDetailResponse
 import com.example.project.presentation.api.PeopleDetailResponse
 import retrofit2.Call
 import retrofit2.Callback
