@@ -12,30 +12,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/return_menu"
-        app:layout_constraintBottom_toTopOf="@+id/button_previous"
+        app:layout_constraintBottom_toTopOf="@+id/film_recyclerview"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button_next"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/next_page"
-        app:layout_constraintTop_toBottomOf="@+id/button_menu"
-        app:layout_constraintBottom_toTopOf="@+id/film_recyclerview"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button_previous" />
-
-    <Button
-        android:id="@+id/button_previous"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/previous_page"
-        app:layout_constraintTop_toBottomOf="@+id/button_menu"
-        app:layout_constraintBottom_toTopOf="@+id/film_recyclerview"
-        app:layout_constraintEnd_toStartOf="@+id/button_next"
-        app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/film_recyclerview"
@@ -44,7 +24,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_previous" />
+        app:layout_constraintTop_toBottomOf="@+id/button_menu" />
 
     <ProgressBar
         android:id="@+id/film_list_loader"
@@ -53,7 +33,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_previous"
+        app:layout_constraintTop_toBottomOf="@+id/button_menu"
         />
 
     <TextView
@@ -65,6 +45,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_previous"
+        app:layout_constraintTop_toBottomOf="@+id/button_menu"
         />
 </androidx.constraintlayout.widget.ConstraintLayout>
