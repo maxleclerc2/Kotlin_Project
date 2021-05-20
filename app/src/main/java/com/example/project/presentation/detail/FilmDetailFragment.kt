@@ -60,8 +60,6 @@ class FilmDetailFragment : Fragment() {
 
         viewModel.callApi(uid)
         viewModel.film.observe(viewLifecycleOwner, Observer { filmDetailModel ->
-            //loader.isVisible = filmDetailModel is FilmDetailLoader
-            //textViewError.isVisible = filmDetailModel is FilmDetailError
 
             when(filmDetailModel) {
                 is FilmDetailSuccess -> {

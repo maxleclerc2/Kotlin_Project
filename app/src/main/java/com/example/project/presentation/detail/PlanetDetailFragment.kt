@@ -77,8 +77,6 @@ class PlanetDetailFragment : Fragment() {
 
         viewModel.callApi(uid)
         viewModel.planet.observe(viewLifecycleOwner, Observer { planetDetailModel ->
-            //loader.isVisible = filmDetailModel is FilmDetailLoader
-            //textViewError.isVisible = filmDetailModel is FilmDetailError
 
             when(planetDetailModel) {
                 is PlanetDetailSuccess -> {

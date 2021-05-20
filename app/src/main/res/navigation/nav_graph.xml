@@ -29,7 +29,7 @@
 
         <action
             android:id="@+id/action_MenuFragment_to_StarshipListFragment"
-            app:destination="@id/FilmListFragment" />
+            app:destination="@id/StarshipListFragment" />
 
         <action
             android:id="@+id/action_MenuFragment_to_VehicleListFragment"
@@ -146,5 +146,34 @@
         <action
             android:id="@+id/action_SpeciesDetailFragment_to_SpeciesListFragment"
             app:destination="@id/SpeciesListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/StarshipListFragment"
+        android:name="com.example.project.presentation.list.StarshipListFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_starship_list">
+
+        <action
+            android:id="@+id/action_StarshipListFragment_to_MenuFragment"
+            app:destination="@id/MenuFragment" />
+
+        <action
+            android:id="@+id/action_StarshipListFragment_to_StarshipDetailFragment"
+            app:destination="@id/StarshipDetailFragment" />
+
+        <action
+            android:id="@+id/action_refresh_StarshipListFragment"
+            app:destination="@id/StarshipListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/StarshipDetailFragment"
+        android:name="com.example.project.presentation.detail.StarshipDetailFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_starship_detail">
+
+        <action
+            android:id="@+id/action_StarshipDetailFragment_to_StarshipListFragment"
+            app:destination="@id/StarshipListFragment" />
     </fragment>
 </navigation>

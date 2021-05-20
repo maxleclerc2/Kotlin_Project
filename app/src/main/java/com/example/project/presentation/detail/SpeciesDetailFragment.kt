@@ -69,8 +69,6 @@ class SpeciesDetailFragment : Fragment() {
 
         viewModel.callApi(uid)
         viewModel.species.observe(viewLifecycleOwner, Observer { speciesDetailModel ->
-            //loader.isVisible = filmDetailModel is FilmDetailLoader
-            //textViewError.isVisible = filmDetailModel is FilmDetailError
 
             when(speciesDetailModel) {
                 is SpeciesDetailSuccess -> {

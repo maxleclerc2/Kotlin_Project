@@ -40,13 +40,15 @@ class MenuFragment : Fragment() {
             findNavController().navigate(R.id.action_MenuFragment_to_SpeciesListFragment)
         }
 
-        /*
+
         view.findViewById<Button>(R.id.button_starship).setOnClickListener {
-            findNavController().navigate(R.id.action_MenuFragment_to_StarshipsListFragment)
+            findNavController().navigate(R.id.action_MenuFragment_to_StarshipListFragment)
         }
 
+        /*
+
         view.findViewById<Button>(R.id.button_vehicle).setOnClickListener {
-            findNavController().navigate(R.id.action_MenuFragment_to_VehiclesListFragment)
+            findNavController().navigate(R.id.action_MenuFragment_to_VehicleListFragment)
         }
 
          */
