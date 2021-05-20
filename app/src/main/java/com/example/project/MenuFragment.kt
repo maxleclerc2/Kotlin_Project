@@ -45,12 +45,8 @@ class MenuFragment : Fragment() {
             findNavController().navigate(R.id.action_MenuFragment_to_StarshipListFragment)
         }
 
-        /*
-
         view.findViewById<Button>(R.id.button_vehicle).setOnClickListener {
             findNavController().navigate(R.id.action_MenuFragment_to_VehicleListFragment)
         }
-
-         */
     }
 }

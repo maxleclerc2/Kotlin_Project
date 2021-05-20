@@ -33,7 +33,7 @@
 
         <action
             android:id="@+id/action_MenuFragment_to_VehicleListFragment"
-            app:destination="@id/PeopleListFragment" />
+            app:destination="@id/VehicleListFragment" />
     </fragment>
 
     <fragment
@@ -175,5 +175,34 @@
         <action
             android:id="@+id/action_StarshipDetailFragment_to_StarshipListFragment"
             app:destination="@id/StarshipListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/VehicleListFragment"
+        android:name="com.example.project.presentation.list.VehicleListFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_vehicle_list">
+
+        <action
+            android:id="@+id/action_VehicleListFragment_to_MenuFragment"
+            app:destination="@id/MenuFragment" />
+
+        <action
+            android:id="@+id/action_VehicleListFragment_to_VehicleDetailFragment"
+            app:destination="@id/VehicleDetailFragment" />
+
+        <action
+            android:id="@+id/action_refresh_VehicleListFragment"
+            app:destination="@id/VehicleListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/VehicleDetailFragment"
+        android:name="com.example.project.presentation.detail.VehicleDetailFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_vehicle_detail">
+
+        <action
+            android:id="@+id/action_VehicleDetailFragment_to_VehicleListFragment"
+            app:destination="@id/VehicleListFragment" />
     </fragment>
 </navigation>

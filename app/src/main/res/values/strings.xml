@@ -45,13 +45,15 @@
     <string name="population_generic">Population:</string>
     <string name="climate_generic">Climate:</string>
     <string name="terrain_generic">Terrain:</string>
+
     <string name="classification_generic">Classification:</string>
     <string name="designation_generic">Designation:</string>
     <string name="averageHeight_generic">Average height:</string>
     <string name="averageLifespan_generic">Average lifespan:</string>
     <string name="language_generic">Language:</string>
+
     <string name="model_generic">Model:</string>
-    <string name="class_generic">Starship class:</string>
+    <string name="class_generic">Class:</string>
     <string name="manufacturer_generic">Manufacturer:</string>
     <string name="cost_generic">Cost in credits:</string>
     <string name="length_generic">Length:</string>
