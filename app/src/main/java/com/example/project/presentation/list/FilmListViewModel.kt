@@ -27,6 +27,19 @@ class FilmListViewModel : ViewModel() {
                 if (response.isSuccessful && response.body() != null) {
                     val filmResponse = response.body()!!
                     filmList.value = FilmListSuccess(filmResponse.result)
+
+                    /* DEBUG
+                    if (response.raw().cacheResponse() != null) {
+                        println("Cache")
+                    }
+
+                    if (response.raw().networkResponse() != null) {
+                        println("Web")
+                    }
+
+                     */
+                } else {
+                    filmList.value = FilmListError
                 }
             }
 

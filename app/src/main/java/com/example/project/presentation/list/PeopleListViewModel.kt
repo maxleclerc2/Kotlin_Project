@@ -12,7 +12,7 @@ class PeopleListViewModel : ViewModel() {
     val peopleList: MutableLiveData<ElementListModel> = MutableLiveData()
 
     init {
-        // callApi()
+        callApi("1")
     }
 
     fun callApi(page: String) {
@@ -27,6 +27,8 @@ class PeopleListViewModel : ViewModel() {
                 if (response.isSuccessful && response.body() != null) {
                     val elementResponse = response.body()!!
                     peopleList.value = ElementListSuccess(elementResponse.results, elementResponse.previous, elementResponse.next)
+                } else {
+                    peopleList.value = ElementListError
                 }
             }
 

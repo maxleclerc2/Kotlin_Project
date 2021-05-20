@@ -12,7 +12,7 @@ class PlanetListViewModel : ViewModel() {
     val planetList: MutableLiveData<ElementListModel> = MutableLiveData()
 
     init {
-        // null
+        callApi("1")
     }
 
     fun callApi(page: String) {
@@ -27,6 +27,8 @@ class PlanetListViewModel : ViewModel() {
                 if (response.isSuccessful && response.body() != null) {
                     val elementResponse = response.body()!!
                     planetList.value = ElementListSuccess(elementResponse.results, elementResponse.previous, elementResponse.next)
+                } else {
+                    planetList.value = ElementListError
                 }
             }
 

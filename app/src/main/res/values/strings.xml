@@ -21,7 +21,7 @@
     <string name="return_menu">Menu</string>
     <string name="previous_page">Previous page</string>
     <string name="next_page">Next page</string>
-    <string name="error_generic">An error occurred...</string>
+    <string name="error_generic">An error occurred...\nPlease check your Internet connection</string>
     <string name="return_generic">Return</string>
 
     <string name="title_generic">Title:</string>
