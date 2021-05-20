@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.detail.SpeciesDetailFragment">
+
+    <Button
+        android:id="@+id/button_return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/return_generic"
+        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/species_detail_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name_generic"
+        android:textColor="@color/yellow_star_wars"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_return"
+        app:layout_constraintEnd_toStartOf="@+id/species_detail_name_value"
+        app:layout_constraintBottom_toTopOf="@+id/species_detail_classification"
+        />
+
+    <TextView
+        android:id="@+id/species_detail_name_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/yellow_star_wars"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/species_detail_name"
+        app:layout_constraintTop_toBottomOf="@+id/button_return"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/species_detail_classification"
+        />
+
+    <TextView
+        android:id="@+id/species_detail_classification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/classification_generic"
+        android:textColor="@color/yellow_star_wars"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/species_detail_name"
+        app:layout_constraintEnd_toStartOf="@+id/species_detail_classification_value"
+        app:layout_constraintBottom_toTopOf="@+id/species_detail_designation"
+        />
+
+    <TextView
+        android:id="@+id/species_detail_classification_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/yellow_star_wars"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/species_detail_classification"
+        app:layout_constraintTop_toBottomOf="@+id/species_detail_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/species_detail_designation"
+        />
+
+    <TextView
+        android:id="@+id/species_detail_designation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/designation_generic"
+        android:textColor="@color/yellow_star_wars"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/species_detail_classification"
+        app:layout_constraintEnd_toStartOf="@+id/species_detail_designation_value"
+        app:layout_constraintBottom_toTopOf="@+id/species_detail_averageHeight"
+        />
+
+    <TextView
+        android:id="@+id/species_detail_designation_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/yellow_star_wars"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/species_detail_designation"
+        app:layout_constraintTop_toBottomOf="@+id/species_detail_classification"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/species_detail_averageHeight"
+        />
+
+    <TextView
+        android:id="@+id/species_detail_averageHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/averageHeight_generic"
+        android:textColor="@color/yellow_star_wars"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/species_detail_designation"
+        app:layout_constraintEnd_toStartOf="@+id/species_detail_averageHeight_value"
+        app:layout_constraintBottom_toTopOf="@+id/species_detail_averageLifespan"
+        />
+
+    <TextView
+        android:id="@+id/species_detail_averageHeight_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/yellow_star_wars"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/species_detail_averageHeight"
+        app:layout_constraintTop_toBottomOf="@+id/species_detail_designation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/species_detail_averageLifespan"
+        />
+
+    <TextView
+        android:id="@+id/species_detail_averageLifespan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/averageLifespan_generic"
+        android:textColor="@color/yellow_star_wars"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/species_detail_averageHeight"
+        app:layout_constraintEnd_toStartOf="@+id/species_detail_averageLifespan_value"
+        app:layout_constraintBottom_toTopOf="@+id/species_detail_language"
+        />
+
+    <TextView
+        android:id="@+id/species_detail_averageLifespan_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/yellow_star_wars"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/species_detail_averageLifespan"
+        app:layout_constraintTop_toBottomOf="@+id/species_detail_averageHeight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/species_detail_language"
+        />
+
+    <TextView
+        android:id="@+id/species_detail_language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/language_generic"
+        android:textColor="@color/yellow_star_wars"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/species_detail_averageLifespan"
+        app:layout_constraintEnd_toStartOf="@+id/species_detail_language_value"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/species_detail_language_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/yellow_star_wars"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/species_detail_language"
+        app:layout_constraintTop_toBottomOf="@+id/species_detail_averageLifespan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <ProgressBar
+        android:id="@+id/species_detail_loader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_return" />
+
+    <TextView
+        android:id="@+id/species_detail_error"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/error_generic"
+        android:textAlignment="center"
+        android:textColor="@color/yellow_star_wars"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_return"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,6 +8,8 @@ data class SpeciesProperties(
     val hair_colors: String,
     val skin_colors: String,
     val eye_colors: String,
+    val homeworld: String,
+    val language: String,
     val people: List<String>,
     val created: String,
     val edited: String,

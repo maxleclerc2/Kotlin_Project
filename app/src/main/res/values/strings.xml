@@ -45,4 +45,9 @@
     <string name="population_generic">Population:</string>
     <string name="climate_generic">Climate:</string>
     <string name="terrain_generic">Terrain:</string>
+    <string name="classification_generic">Classification:</string>
+    <string name="designation_generic">Designation:</string>
+    <string name="averageHeight_generic">Average height:</string>
+    <string name="averageLifespan_generic">Average lifespan:</string>
+    <string name="language_generic">Language:</string>
 </resources>

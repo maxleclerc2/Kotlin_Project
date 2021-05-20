@@ -25,7 +25,7 @@
 
         <action
             android:id="@+id/action_MenuFragment_to_SpeciesListFragment"
-            app:destination="@id/PeopleListFragment" />
+            app:destination="@id/SpeciesListFragment" />
 
         <action
             android:id="@+id/action_MenuFragment_to_StarshipListFragment"
@@ -117,5 +117,34 @@
         <action
             android:id="@+id/action_PlanetDetailFragment_to_PlanetListFragment"
             app:destination="@id/PlanetListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/SpeciesListFragment"
+        android:name="com.example.project.presentation.list.SpeciesListFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_species_list">
+
+        <action
+            android:id="@+id/action_SpeciesListFragment_to_MenuFragment"
+            app:destination="@id/MenuFragment" />
+
+        <action
+            android:id="@+id/action_SpeciesListFragment_to_SpeciesDetailFragment"
+            app:destination="@id/SpeciesDetailFragment" />
+
+        <action
+            android:id="@+id/action_refresh_SpeciesListFragment"
+            app:destination="@id/SpeciesListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SpeciesDetailFragment"
+        android:name="com.example.project.presentation.detail.SpeciesDetailFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_species_detail">
+
+        <action
+            android:id="@+id/action_SpeciesDetailFragment_to_SpeciesListFragment"
+            app:destination="@id/SpeciesListFragment" />
     </fragment>
 </navigation>

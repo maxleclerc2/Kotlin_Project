@@ -64,7 +64,7 @@ class PlanetDetailFragment : Fragment() {
         textViewGravity = view.findViewById(R.id.planet_detail_gravity)
         textViewGravityValue = view.findViewById(R.id.planet_detail_gravity_value)
         textViewPopulation = view.findViewById(R.id.planet_detail_population)
-        textViewPopulationValue = view.findViewById(R.id.planet_detail_population_Value)
+        textViewPopulationValue = view.findViewById(R.id.planet_detail_population_value)
         textViewClimate = view.findViewById(R.id.planet_detail_climate)
         textViewClimateValue = view.findViewById(R.id.planet_detail_climate_value)
         textViewTerrain = view.findViewById(R.id.planet_detail_terrain)

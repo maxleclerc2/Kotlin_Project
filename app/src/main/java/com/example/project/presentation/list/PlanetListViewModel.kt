@@ -12,7 +12,7 @@ class PlanetListViewModel : ViewModel() {
     val planetList: MutableLiveData<ElementListModel> = MutableLiveData()
 
     init {
-        callApi("1")
+
     }
 
     fun callApi(page: String) {

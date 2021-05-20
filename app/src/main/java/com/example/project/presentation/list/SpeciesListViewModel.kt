@@ -8,27 +8,27 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class PeopleListViewModel : ViewModel() {
-    val peopleList: MutableLiveData<ElementListModel> = MutableLiveData()
+class SpeciesListViewModel : ViewModel() {
+    val speciesList: MutableLiveData<ElementListModel> = MutableLiveData()
 
     init {
-
+        
     }
 
     fun callApi(page: String) {
-        peopleList.value = ElementListLoader
+        speciesList.value = ElementListLoader
 
-        Singletons.starWarsApi.getPeopleList(page, "10").enqueue(object : Callback<ElementListResponse> {
+        Singletons.starWarsApi.getSpeciesList(page, "10").enqueue(object : Callback<ElementListResponse> {
             override fun onFailure(call: Call<ElementListResponse>, t: Throwable) {
-                peopleList.value = ElementListError
+                speciesList.value = ElementListError
             }
 
             override fun onResponse(call: Call<ElementListResponse>, response: Response<ElementListResponse>) {
                 if (response.isSuccessful && response.body() != null) {
                     val elementResponse = response.body()!!
-                    peopleList.value = ElementListSuccess(elementResponse.results, elementResponse.previous, elementResponse.next)
+                    speciesList.value = ElementListSuccess(elementResponse.results, elementResponse.previous, elementResponse.next)
                 } else {
-                    peopleList.value = ElementListError
+                    speciesList.value = ElementListError
                 }
             }
 
