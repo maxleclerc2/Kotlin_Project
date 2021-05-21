@@ -53,7 +53,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_previous"
+        app:layout_constraintTop_toBottomOf="@+id/button_menu"
         />
 
     <TextView
@@ -66,6 +66,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_previous"
+        app:layout_constraintTop_toBottomOf="@+id/button_menu"
         />
 </androidx.constraintlayout.widget.ConstraintLayout>

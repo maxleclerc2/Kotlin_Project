@@ -61,26 +61,45 @@ class SpeciesListFragment : Fragment() {
 
         viewModel.callApi(page)
         viewModel.speciesList.observe(viewLifecycleOwner, Observer { elementListModel ->
-            loader.isVisible = elementListModel is ElementListLoader
-            textViewError.isVisible = elementListModel is ElementListError
 
-            if(elementListModel is ElementListSuccess) {
-                showList(elementListModel.elementList)
+            when(elementListModel) {
+                is ElementListLoader -> {
+                    loader.isVisible = true
+                    textViewError.isVisible = false
 
-                if(elementListModel.previous != null) {
-                    buttonPrevious.isVisible = true
-                    pagePrev = elementListModel.previous.substring(40, 41)
-                } else {
                     buttonPrevious.isVisible = false
-                    pagePrev = "1"
+                    buttonNext.isVisible = false
                 }
 
-                if(elementListModel.next != null) {
-                    buttonNext.isVisible = true
-                    pageNext = elementListModel.next.substring(40, 41)
-                } else {
+                ElementListError -> {
+                    loader.isVisible = false
+                    textViewError.isVisible = true
+
+                    buttonPrevious.isVisible = false
                     buttonNext.isVisible = false
-                    pageNext = "1"
+                }
+
+                is ElementListSuccess -> {
+                    loader.isVisible = false
+                    textViewError.isVisible = false
+
+                    showList(elementListModel.elementList)
+
+                    if(elementListModel.previous != null) {
+                        buttonPrevious.isVisible = true
+                        pagePrev = elementListModel.previous.substring(40, 41)
+                    } else {
+                        buttonPrevious.isVisible = false
+                        pagePrev = "1"
+                    }
+
+                    if(elementListModel.next != null) {
+                        buttonNext.isVisible = true
+                        pageNext = elementListModel.next.substring(40, 41)
+                    } else {
+                        buttonNext.isVisible = false
+                        pageNext = "1"
+                    }
                 }
             }
         })
