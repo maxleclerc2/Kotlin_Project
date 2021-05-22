@@ -63,6 +63,7 @@
         android:text="@string/error_generic"
         android:textColor="@color/yellow_star_wars"
         android:textAlignment="center"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
