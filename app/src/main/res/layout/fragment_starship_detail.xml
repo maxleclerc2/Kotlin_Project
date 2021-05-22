@@ -21,11 +21,13 @@
 
     <TextView
         android:id="@+id/starship_detail_name"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/name_generic"
         android:textColor="@color/yellow_star_wars"
         android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_return"
         app:layout_constraintEnd_toStartOf="@+id/starship_detail_name_value"
@@ -34,10 +36,11 @@
 
     <TextView
         android:id="@+id/starship_detail_name_value"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:textColor="@color/yellow_star_wars"
         android:textAlignment="center"
+        android:textSize="16sp"
         app:layout_constraintStart_toEndOf="@+id/starship_detail_name"
         app:layout_constraintTop_toBottomOf="@+id/button_return"
         app:layout_constraintEnd_toEndOf="parent"
@@ -46,11 +49,13 @@
 
     <TextView
         android:id="@+id/starship_detail_model"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/model_generic"
         android:textColor="@color/yellow_star_wars"
         android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/starship_detail_name"
         app:layout_constraintEnd_toStartOf="@+id/starship_detail_model_value"
@@ -59,10 +64,11 @@
 
     <TextView
         android:id="@+id/starship_detail_model_value"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:textColor="@color/yellow_star_wars"
         android:textAlignment="center"
+        android:textSize="16sp"
         app:layout_constraintStart_toEndOf="@+id/starship_detail_model"
         app:layout_constraintTop_toBottomOf="@+id/starship_detail_name"
         app:layout_constraintEnd_toEndOf="parent"
@@ -71,11 +77,13 @@
 
     <TextView
         android:id="@+id/starship_detail_class"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/starship_class_generic"
         android:textColor="@color/yellow_star_wars"
         android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/starship_detail_model"
         app:layout_constraintEnd_toStartOf="@+id/starship_detail_class_value"
@@ -84,10 +92,11 @@
 
     <TextView
         android:id="@+id/starship_detail_class_value"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:textColor="@color/yellow_star_wars"
         android:textAlignment="center"
+        android:textSize="16sp"
         app:layout_constraintStart_toEndOf="@+id/starship_detail_class"
         app:layout_constraintTop_toBottomOf="@+id/starship_detail_model"
         app:layout_constraintEnd_toEndOf="parent"
@@ -96,11 +105,13 @@
 
     <TextView
         android:id="@+id/starship_detail_manufacturer"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/manufacturer_generic"
         android:textColor="@color/yellow_star_wars"
         android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/starship_detail_class"
         app:layout_constraintEnd_toStartOf="@+id/starship_detail_manufacturer_value"
@@ -109,10 +120,11 @@
 
     <TextView
         android:id="@+id/starship_detail_manufacturer_value"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:textColor="@color/yellow_star_wars"
         android:textAlignment="center"
+        android:textSize="16sp"
         app:layout_constraintStart_toEndOf="@+id/starship_detail_manufacturer"
         app:layout_constraintTop_toBottomOf="@+id/starship_detail_class"
         app:layout_constraintEnd_toEndOf="parent"
@@ -121,11 +133,13 @@
 
     <TextView
         android:id="@+id/starship_detail_cost"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/cost_generic"
         android:textColor="@color/yellow_star_wars"
         android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/starship_detail_manufacturer"
         app:layout_constraintEnd_toStartOf="@+id/starship_detail_cost_value"
@@ -134,10 +148,11 @@
 
     <TextView
         android:id="@+id/starship_detail_cost_value"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:textColor="@color/yellow_star_wars"
         android:textAlignment="center"
+        android:textSize="16sp"
         app:layout_constraintStart_toEndOf="@+id/starship_detail_cost"
         app:layout_constraintTop_toBottomOf="@+id/starship_detail_manufacturer"
         app:layout_constraintEnd_toEndOf="parent"
@@ -146,11 +161,13 @@
 
     <TextView
         android:id="@+id/starship_detail_length"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/length_generic"
         android:textColor="@color/yellow_star_wars"
         android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/starship_detail_cost"
         app:layout_constraintEnd_toStartOf="@+id/starship_detail_length_value"
@@ -159,10 +176,11 @@
 
     <TextView
         android:id="@+id/starship_detail_length_value"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:textColor="@color/yellow_star_wars"
         android:textAlignment="center"
+        android:textSize="16sp"
         app:layout_constraintStart_toEndOf="@+id/starship_detail_length"
         app:layout_constraintTop_toBottomOf="@+id/starship_detail_cost"
         app:layout_constraintEnd_toEndOf="parent"
@@ -171,11 +189,13 @@
 
     <TextView
         android:id="@+id/starship_detail_crew"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/crew_generic"
         android:textColor="@color/yellow_star_wars"
         android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/starship_detail_length"
         app:layout_constraintEnd_toStartOf="@+id/starship_detail_crew_value"
@@ -184,10 +204,11 @@
 
     <TextView
         android:id="@+id/starship_detail_crew_value"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:textColor="@color/yellow_star_wars"
         android:textAlignment="center"
+        android:textSize="16sp"
         app:layout_constraintStart_toEndOf="@+id/starship_detail_crew"
         app:layout_constraintTop_toBottomOf="@+id/starship_detail_length"
         app:layout_constraintEnd_toEndOf="parent"
@@ -196,11 +217,13 @@
 
     <TextView
         android:id="@+id/starship_detail_passengers"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/passengers_generic"
         android:textColor="@color/yellow_star_wars"
         android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/starship_detail_crew"
         app:layout_constraintEnd_toStartOf="@+id/starship_detail_passengers_value"
@@ -209,10 +232,11 @@
 
     <TextView
         android:id="@+id/starship_detail_passengers_value"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:textColor="@color/yellow_star_wars"
         android:textAlignment="center"
+        android:textSize="16sp"
         app:layout_constraintStart_toEndOf="@+id/starship_detail_passengers"
         app:layout_constraintTop_toBottomOf="@+id/starship_detail_crew"
         app:layout_constraintEnd_toEndOf="parent"
@@ -230,10 +254,11 @@
 
     <TextView
         android:id="@+id/starship_detail_error"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/error_generic"
         android:textAlignment="center"
+        android:textSize="18sp"
         android:textColor="@color/yellow_star_wars"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

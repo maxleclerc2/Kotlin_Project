@@ -9,7 +9,6 @@ import retrofit2.Callback
 import retrofit2.Response
 
 class VehicleDetailViewModel : ViewModel() {
-    private lateinit var uid: String
     val vehicle : MutableLiveData<VehicleDetailModel> = MutableLiveData()
 
     init {

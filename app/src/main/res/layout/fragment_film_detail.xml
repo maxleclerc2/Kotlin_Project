@@ -21,11 +21,13 @@
 
     <TextView
         android:id="@+id/film_detail_title"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/title_generic"
         android:textColor="@color/yellow_star_wars"
         android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_return"
         app:layout_constraintEnd_toStartOf="@+id/film_detail_title_value"
@@ -34,23 +36,26 @@
 
     <TextView
         android:id="@+id/film_detail_title_value"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:textColor="@color/yellow_star_wars"
         android:textAlignment="center"
         app:layout_constraintStart_toEndOf="@+id/film_detail_title"
         app:layout_constraintTop_toBottomOf="@+id/button_return"
         app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/film_detail_episodeId"
         />
 
     <TextView
         android:id="@+id/film_detail_episodeId"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/episodeId_generic"
         android:textColor="@color/yellow_star_wars"
         android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/film_detail_title"
         app:layout_constraintEnd_toStartOf="@+id/film_detail_episodeId_value"
@@ -59,10 +64,11 @@
 
     <TextView
         android:id="@+id/film_detail_episodeId_value"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:textColor="@color/yellow_star_wars"
         android:textAlignment="center"
+        android:textSize="16sp"
         app:layout_constraintStart_toEndOf="@+id/film_detail_episodeId"
         app:layout_constraintTop_toBottomOf="@+id/film_detail_title"
         app:layout_constraintEnd_toEndOf="parent"
@@ -71,11 +77,13 @@
 
     <TextView
         android:id="@+id/film_detail_release"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/release_generic"
         android:textColor="@color/yellow_star_wars"
         android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/film_detail_episodeId"
         app:layout_constraintEnd_toStartOf="@+id/film_detail_release_value"
@@ -84,10 +92,11 @@
 
     <TextView
         android:id="@+id/film_detail_release_value"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:textColor="@color/yellow_star_wars"
         android:textAlignment="center"
+        android:textSize="16sp"
         app:layout_constraintStart_toEndOf="@+id/film_detail_release"
         app:layout_constraintTop_toBottomOf="@+id/film_detail_episodeId"
         app:layout_constraintEnd_toEndOf="parent"
@@ -96,11 +105,13 @@
 
     <TextView
         android:id="@+id/film_detail_producer"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/producer_generic"
         android:textColor="@color/yellow_star_wars"
         android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/film_detail_release"
         app:layout_constraintEnd_toStartOf="@+id/film_detail_producer_value"
@@ -109,10 +120,11 @@
 
     <TextView
         android:id="@+id/film_detail_producer_value"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:textColor="@color/yellow_star_wars"
         android:textAlignment="center"
+        android:textSize="16sp"
         app:layout_constraintStart_toEndOf="@+id/film_detail_producer"
         app:layout_constraintTop_toBottomOf="@+id/film_detail_release"
         app:layout_constraintEnd_toEndOf="parent"
@@ -130,10 +142,11 @@
 
     <TextView
         android:id="@+id/film_detail_error"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/error_generic"
         android:textAlignment="center"
+        android:textSize="18sp"
         android:textColor="@color/yellow_star_wars"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

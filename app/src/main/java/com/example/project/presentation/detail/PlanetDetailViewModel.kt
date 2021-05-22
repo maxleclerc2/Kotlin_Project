@@ -9,7 +9,6 @@ import retrofit2.Callback
 import retrofit2.Response
 
 class PlanetDetailViewModel : ViewModel() {
-    private lateinit var uid: String
     val planet : MutableLiveData<PlanetDetailModel> = MutableLiveData()
 
     init {

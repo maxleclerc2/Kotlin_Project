@@ -72,8 +72,6 @@ class PeopleDetailFragment : Fragment() {
 
         viewModel.callApi(uid)
         viewModel.people.observe(viewLifecycleOwner, Observer { peopleDetailModel ->
-            //loader.isVisible = filmDetailModel is FilmDetailLoader
-            //textViewError.isVisible = filmDetailModel is FilmDetailError
 
             when(peopleDetailModel) {
                 is PeopleDetailSuccess -> {

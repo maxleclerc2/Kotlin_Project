@@ -9,7 +9,6 @@ import retrofit2.Callback
 import retrofit2.Response
 
 class FilmDetailViewModel : ViewModel() {
-    private lateinit var uid: String
     val film : MutableLiveData<FilmDetailModel> = MutableLiveData()
 
     init {
@@ -33,10 +32,4 @@ class FilmDetailViewModel : ViewModel() {
 
         })
     }
-/*
-    operator fun invoke(viewArgument: String) {
-        this.uid = viewArgument
-    }
-
- */
 }

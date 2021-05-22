@@ -9,7 +9,6 @@ import retrofit2.Callback
 import retrofit2.Response
 
 class StarshipDetailViewModel : ViewModel() {
-    private lateinit var uid: String
     val starship : MutableLiveData<StarshipDetailModel> = MutableLiveData()
 
     init {
